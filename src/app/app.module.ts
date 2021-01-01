@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 
 
 const routes: Routes = [
-  {path: 'category/:id', component: ProductListComponent},
+  //{path: 'category/:id', component: ProductListComponent},
+  //in order to Display Category Name in Product List Grid we replaced it by:
+  {path: 'category/:id/:name', component: ProductListComponent}, 
+  //
   {path: 'category', component: ProductListComponent},
   {path: 'products', component: ProductListComponent },
   {path: '', redirectTo: '/products', pathMatch: 'full'},
@@ -20,7 +24,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductCategoryMenuComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

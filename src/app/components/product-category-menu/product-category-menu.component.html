@@ -1,0 +1,19 @@
+
+    <div class="menu-sidebar-content js-scrollbar1">
+      <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar-list">
+          
+          <li *ngFor="let temProductCategory of productCategories">
+          <!--  <a routerLink="/category/{{ temProductCategory.id }}" routerLinkActive="active-link">
+                {{ temProductCategory.categoryName }}
+            </a> -->
+            <!-- in order to Display Category Name in Product List Grid we replaced it by: -->
+            <a routerLink="/category/{{ temProductCategory.id }}/{{ temProductCategory.categoryName }}" routerLinkActive="active-link">
+              {{ temProductCategory.categoryName }}
+          </a>
+          </li>
+         
+        
+        </ul>
+      </nav>
+    </div>
