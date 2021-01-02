@@ -9,9 +9,11 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { Routes, RouterModule } from '@angular/router';
 import { ProductCategoryMenuComponent } from './components/product-category-menu/product-category-menu.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 
 const routes: Routes = [
+  {path: 'products/:id', component: ProductDetailsComponent},
   {path: 'search/:keyword', component: ProductListComponent},
   //{path: 'category/:id', component: ProductListComponent},
   //in order to Display Category Name in Product List Grid we replaced it by:
@@ -28,7 +30,8 @@ const routes: Routes = [
     AppComponent,
     ProductListComponent,
     ProductCategoryMenuComponent,
-    SearchComponent
+    SearchComponent,
+    ProductDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
