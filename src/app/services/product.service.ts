@@ -35,6 +35,14 @@ getProductCategories(): Observable<ProductCategory[]> {
         );        
 }
 
+searchProducts(theKeyword: string): Observable<Product[]> {
+    // need to build URL based on the keyword
+    const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`;
+    return this.httpClient.get<GetResponseProducts>(searchUrl)
+    .pipe(
+    map(response => response._embedded.products));
+    }
+
 }
 
 interface GetResponseProducts {
