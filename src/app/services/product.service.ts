@@ -57,6 +57,8 @@ products: Product[];
 }
 }
 
+//liaison entre spring et angular
+
 
 interface GetResponseProductCategory {
     _embedded: {
