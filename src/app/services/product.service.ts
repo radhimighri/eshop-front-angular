@@ -49,7 +49,7 @@ searchProducts(theKeyword: string): Observable<Product[]> {
     map(response => response._embedded.products));
     }
 
-}
+} //test
 
 interface GetResponseProducts {
 _embedded: { //Unwraps the JSON from Spring Data REST using "_embedded entry"
