@@ -8,10 +8,17 @@
     right:0;
     min-width:95px;
     color:#fff;
+<<<<<<< HEAD
     border:10px solid #2c2c2c;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:83px;
+=======
+    border:10px solid #205b8d;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:43px;
+>>>>>>> main
     background:#205b8d
 }
 
@@ -20,12 +27,20 @@
     Rename as .login-status-header
 */
 .login-status-header{
+<<<<<<< HEAD
     display:-webkit-box; 
     display:-webkit-flex;
     display:-moz-box;
     display:-ms-flexbox;
     display:flex;
     height: 150px;
+=======
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex
+>>>>>>> main
 }
 
 /*

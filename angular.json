@@ -122,10 +122,15 @@
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "angular-ecommerce",
   "cli": {
     "analytics": false
   }
+=======
+    }},
+  "defaultProject": "angular-ecommerce"
+>>>>>>> main
 }
